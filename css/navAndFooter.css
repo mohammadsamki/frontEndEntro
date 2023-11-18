@@ -1,0 +1,19 @@
+body{
+    background-color: gray;
+}
+/* nav bar style that contain logo, h1 and 3 buttons */
+
+#naveBar{
+    
+}
+/* radios image logo */
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+
+}
+#naveBar>button{
+    background-color: red;
+}
