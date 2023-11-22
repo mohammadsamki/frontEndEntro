@@ -1,19 +1,88 @@
 body{
     background-color: gray;
+    margin: 0;
 }
-/* nav bar style that contain logo, h1 and 3 buttons */
-
+/* nav bar style that contain logo as img, h1 and div that contain 3 buttons */
+/* the img in the left side and the title in the middle at the left put the div that contain 3 buttons  */
+#divContent{
+    margin-top: 100px;
+}
 #naveBar{
-    
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
-/* radios image logo */
-.logo{
+#naveBar img:hover{
+    border: white 3px solid;
+    width: 200px;
+    height: 200px;
+}
+#naveBar img{
+    float: left;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    
+    margin-left: 10px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+#naveBar h1{
+    float: left;
+    color: white;
+    margin-left: 500px;
+    margin-top: 30px;
+    font-size: 40px;
+}
+#naveBar h1:hover{
+    color: black;
+}
+#naveBar div{
+    float: right;
+    margin-top: 30px;
+    margin-right: 100px;
 
 }
-#naveBar>button{
-    background-color: red;
+
+#naveBar div button{
+    background-color: gray;
+    border: black 3px solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
+    /*display: list-item;
+     */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#naveBar div button:hover{
+    background-color: black;
+    color: white;
+    border: white 3px solid;
+    border-radius: 10px;
+}
+
+
+/* footer style  */
+
+#footer{
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+#footer p{
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
 }
