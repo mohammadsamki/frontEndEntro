@@ -5,12 +5,12 @@ body{
 /* nav bar style that contain logo as img, h1 and div that contain 3 buttons */
 /* the img in the left side and the title in the middle at the left put the div that contain 3 buttons  */
 #divContent{
-    margin-top: 100px;
+    margin-top: 200px;
 }
 #naveBar{
     background-color: #333;
     overflow: hidden;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     z-index: 1;
