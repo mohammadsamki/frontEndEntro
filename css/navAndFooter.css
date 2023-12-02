@@ -6,6 +6,9 @@ body{
 /* the img in the left side and the title in the middle at the left put the div that contain 3 buttons  */
 #divContent{
     margin-top: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 #naveBar{
     background-color: #333;
