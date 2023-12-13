@@ -84,4 +84,71 @@ console.log(ovj1.name);
 console.log(ovj1.age);
 console.log(ovj1.isStudent);
 
+var body = document.getElementsByTagName('body');
+console.log(body);
 //  function :> block of code that can be called when needed
+//  function name() { code } > declare a function
+//  name() > call the function
+var checkbox = document.getElementById('checkbox');
+
+function changeBack() {
+    // alert('hi iam a new alert');
+    
+console.log(checkbox.checked );
+if (checkbox.checked) {
+    body[0].style.backgroundColor = 'white';
+} else {
+    body[0].style.backgroundColor = 'gray';
+    
+}
+
+
+}
+var selctColor = document.getElementById('selctColor');
+// alert('hi iam a new aleart');
+//  if condition :>  if (condition) { code } > if the condition is true the code will be executed   
+
+
+function changeColor() {
+    console.log(selctColor.value);
+    body[0].style.backgroundColor = selctColor.value;
+}
+var inputTxt = document.getElementById('inputTxt');
+var searched = document.getElementById('searched');
+// var searchNumer = document.getElementById('searchNumer');
+function repateSearched(){
+    // console.log(searched.innerHTML)
+    // searched.innerHTML= ''; // clear for the div contant
+    // for (var i = 0; i <searchNumer.value;i++){ // i with searchNumer
+    //     //  append elemnt
+    //     var pElemnt = document.createElement('p');
+    //     pElemnt.innerHTML = inputTxt.value;
+    //     searched.appendChild(pElemnt);
+    // }
+    console.log(searched.children)
+    var isExisted = true;
+    for (var i =0 ; i <searched.children.length;i++) {
+        console.log(searched.children[i].innerHTML)
+        if (searched.children[i].innerHTML ==inputTxt.value){
+            searched.children[i].style.color ='red';
+            searched.children[i].style.fontSize= '20px';
+        searched.children[i].style.backgroundColor= 'white';
+
+            isExisted = false;
+            continue;
+        }
+        searched.children[i].style.color ='black';
+        searched.children[i].style.fontSize= '';
+        searched.children[i].style.backgroundColor= 'gray';
+
+}
+    if (isExisted){
+        alert('item is not found')
+    }
+}
+
+
+//  loops : > for 
+
+//  while loop
+
