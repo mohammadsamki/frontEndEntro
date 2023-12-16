@@ -147,6 +147,14 @@ function repateSearched(){
     }
 }
 
+var eventL= document.getElementById('eventL');
+
+function printEvent() {
+    alert('event');
+}
+
+// eventL.addEventListener('mouseenter',printEvent)
+
 
 //  loops : > for 
 
