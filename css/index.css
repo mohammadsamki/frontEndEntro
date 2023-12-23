@@ -5,3 +5,45 @@
     border-radius: 10px;
     
 }
+
+
+@media only screen and (min-width:400px){
+    /*  tablet */
+    body{
+        background-color: white;
+    }
+    #naveBar h1{
+        margin: 0;
+    }
+    #naveBar div button {
+        display: block;
+        width: 100%;
+        /* margin-bottom: 10px; */
+    }
+    #naveBar img{
+        margin-left: 150px;
+        margin-right: auto;
+        float: none;
+    }
+    #naveBar h1{
+        margin-left: 35%;
+        margin-right: auto;
+        float: none;
+        text-align: center;
+    }
+    #naveBar div{
+        float: none;
+        margin-left: 15%;
+        margin-right: 20%;
+        width: 300px;
+    }
+
+}
+
+
+@media only screen and (min-width:550px){
+    /*  tablet */
+    body{
+        background-color: red;
+    }
+}
