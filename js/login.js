@@ -11,12 +11,27 @@ submitButton.addEventListener('click', function (event) {
     var user =localStorage.getItem('user');
     user = JSON.parse(user);
     console.log(user['email']);
-    if(user['email']==email.value && user['password']==password.value) {
-        alert('Login Successful');
-        window.location.href = 'index.html';
+    var isValid =false;
+    for(var i=0;i<user.length;i++){
+        if(user[i]['email']==email.value && user[i]['password']==password.value) {
+            alert('Login Successful')
+            window.location.href = 'index.html';
+            isValid = true;
+        }
+       
     }
-    else {
+    if(isValid==false){
         alert('Login Failed email or password is incorrect');
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "email or pass are in correct!",
+                footer: '<a href="#">Why do I have this issue?</a>'
+              });
+            var incorrect = document.getElementById('incorrect');
+            incorrect.style.display = 'block';
     }
+    
+    
 }
 )

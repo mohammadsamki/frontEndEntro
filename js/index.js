@@ -160,3 +160,19 @@ function printEvent() {
 
 //  while loop
 
+var changLang= document.getElementById('changeLang');
+var htmlLang= document.getElementById('htmlLang');
+
+function changeTheLang(){
+    // console.log(htmlLang.dir);
+    // console.log(changLang.children);
+    // console.log(changLang.value);
+    if(changLang.value=='en'){
+        htmlLang.dir = 'ltr';
+    }
+    else if(changLang.value=='ar'){
+        htmlLang.dir = 'rtl';
+    }
+        
+    }
+    

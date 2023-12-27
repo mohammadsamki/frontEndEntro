@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl" id="htmlLang">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,6 +36,10 @@
                     <option value="purple">purple</option>
                     <option value="orange">orange</option>
                 </select>
+                <select onchange="changeTheLang()" name="" id="changeLang">
+                    <option value="ar">ar</option>
+                    <option value="en">en</option>
+                </select>
                 <input  type="text" id="inputTxt" placeholder="search" maxlength="20">
                 <!-- <input type="number" id="searchNumer"> -->
                 <button onclick="repateSearched()">search</button>
@@ -51,6 +55,7 @@
             <!-- <button onclick="createNewAleart()" id="newButton"> i am new button</button> -->
             <div id="searched">
                 <p>test</p>
+                <p>انا احب الويب</p>
                 <p>news</p>
                 <p>home</p>
                 <p>cart</p>
